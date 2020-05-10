@@ -66,6 +66,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ACD2DBED2468135200EEB19D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D642BDBC23A9FE4700396732 /* Assets.xcassets */,
+				D642BDBE23A9FE4700396732 /* LaunchScreen.storyboard */,
+				D642BDC123A9FE4700396732 /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		D636B3A123D43203007F370F /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,9 +119,7 @@
 				D642BDB523A9FE4500396732 /* SceneDelegate.swift */,
 				D642BDB723A9FE4500396732 /* ViewController.swift */,
 				D642BDB923A9FE4500396732 /* Main.storyboard */,
-				D642BDBC23A9FE4700396732 /* Assets.xcassets */,
-				D642BDBE23A9FE4700396732 /* LaunchScreen.storyboard */,
-				D642BDC123A9FE4700396732 /* Info.plist */,
+				ACD2DBED2468135200EEB19D /* SupportingFiles */,
 				D636B3A123D43203007F370F /* Views */,
 				D636B3A423D432D3007F370F /* DataTypes */,
 			);
