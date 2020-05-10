@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, PresenterOutputPort {
     @IBOutlet private var boardView: BoardView!
     
     @IBOutlet private var messageDiskView: DiskView!
@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     @IBOutlet private var countLabels: [UILabel]!
     @IBOutlet private var playerActivityIndicators: [UIActivityIndicatorView]!
     
+    private var presenter: Presenter!
+    
     /// どちらの色のプレイヤーのターンかを表します。ゲーム終了時は `nil` です。
     private var turn: Disk? = .dark
     
@@ -28,6 +30,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        presenter = Presenter(outputPort: self)
         
         boardView.delegate = self
         messageDiskSize = messageDiskSizeConstraint.constant
